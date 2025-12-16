@@ -5,52 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
 
 </head>
-<body class="bg-black text-slate-50">
-    <header class="flex justify-around items-center p-4">
+<body class="text-slate-50 bg-[url(https://www.shutterstock.com/image-vector/futuristic-hitech-pattern-square-grid-600nw-2659655521.jpg)] size-100%">
+    <header class="bg-black z-50 sticky top-0 flex justify-around items-center p-4">
         <img src="https://img.icons8.com/sf-regular-filled/1200/image.jpg" alt="Logo" class="size-10">
-        <nav class="flex gap-8">
-            <a href="#home">Home</a>
-            <a href="#about-me">About Me</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+        <div class="bg-gradient-to-l from-purple-900 to-orange-100 rounded-3xl p-0.5">
+        <nav class=" nav bg-black flex gap-8 rounded-3xl p-2 px-8 ">
+            <a class="nav__a hover:text-purple-500 transition-all duration-300 " href="#home">Home</a>
+            <a class="nav__a hover:text-purple-500 transition-all duration-300 " href="#about-me">About Me</a>
+            <a class="nav__a hover:text-purple-500 transition-all duration-300 " href="#projects">Projects</a>
+            <a class="nav__a hover:text-purple-500 transition-all duration-300 " href="#contact">Contact</a>
         </nav>
+        </div>
         <div class="flex gap-4">
             <p>Hire me</p>
             <img src="https://img.icons8.com/sf-regular-filled/1200/image.jpg" alt="Foto mia" class="size-10">
         </div>
     </header>
     <!--Landing-->
-    <section>
-        <div class="bg-[url(https://www.shutterstock.com/image-vector/futuristic-hitech-pattern-square-grid-600nw-2659655521.jpg)] size-100% h-176 flex justify-center items-center">
+    <section id="home" class="m-auto">
+        <div class="h-176 flex justify-center items-center">
             <div class="flex flex-col items-center w-200 p-4">
                 <img src="https://img.icons8.com/sf-regular-filled/1200/image.jpg" alt="Foto mia" class="size-70 m-10">
                 <div class="bg-gradient-to-t from-purple-950 to-transparent flex flex-col items-center rounded-lg p-4"><h1>Hi, i’m Luciano Cipolla</h1>
                     <h2 >Web Developer</h2>
-                    <p>Welcome to my portfolio. Here you'll find my projects and skills in web development.</p>
+                    <p class="text-justify">Welcome to my portfolio. Here you'll find my projects and skills in web development.</p>
                     <button>Hire Me</button>
                 </div>
             </div>
         </div>
         <div class="flex justify-around p-4">
             <a href="">
-                <svg class="text-white fill-current size-20 drop-shadow-[0_12px_20px_rgba(255,255,255,0.5)] transition-all hover:text-purple-700 hover:drop-shadow-[0_0px_40px_rgba(88,28,135,0.9)]">
+                <svg class="text-white fill-current size-20 drop-shadow-[0_12px_20px_rgba(255,255,255,0.5)] transition-all hover:text-[#E34F26] hover:drop-shadow-[0_0_20px_rgba(227,79,38,0.9)] hover:scale-95">
                     <use href="assets/icons/sprite.svg#html5"></use>
                 </svg>
             </a>
             <a href="">
-                <svg class="text-white fill-current size-20 drop-shadow-[0_12px_20px_rgba(255,255,255,0.5)] transition-all hover:text-purple-700 hover:drop-shadow-[0_0px_40px_rgba(88,28,135,0.9)]">
+                <svg class="text-white fill-current size-20 drop-shadow-[0_12px_20px_rgba(255,255,255,0.5)] transition-all hover:text-[#1572B6] hover:drop-shadow-[0_0_20px_rgba(21,114,182,0.9)] hover:scale-95">
                     <use href="assets/icons/sprite.svg#css"></use>
                 </svg>
             </a>
             <a href="">
-                <svg class="text-white fill-current size-20 drop-shadow-[0_12px_20px_rgba(255,255,255,0.5)] transition-all hover:text-purple-700 hover:drop-shadow-[0_0px_40px_rgba(88,28,135,0.9)]">
+                <svg class="text-white fill-current size-20 drop-shadow-[0_12px_20px_rgba(255,255,255,0.5)] transition-all hover:text-[#38BDF8] hover:drop-shadow-[0_0_20px_rgba(56,189,248,0.9)] hover:scale-95">
                     <use href="assets/icons/sprite.svg#tailwindcss"></use>
                 </svg>
             </a>
             <a href="">
-                <svg class="text-white fill-current size-20 drop-shadow-[0_12px_20px_rgba(255,255,255,0.5)] transition-all hover:text-purple-700 hover:drop-shadow-[0_0px_40px_rgba(88,28,135,0.9)]">
+                <svg class="text-white fill-current size-20 drop-shadow-[0_12px_20px_rgba(255,255,255,0.5)] transition-all hover:text-[#FFD43B] hover:drop-shadow-[0_0_20px_rgba(255,212,59,0.9)] hover:scale-95">
                     <use href="assets/icons/sprite.svg#python"></use>
                 </svg>
             </a>
@@ -58,71 +61,83 @@
     </section>
 
     <!--About-me-->
-    <section>
-        <h2>My education</h2>
-        <div>
-            <img src="https://img.icons8.com/sf-regular-filled/1200/image.jpg" alt="Logo UTN">
-            <div>
-                <h3>Henry</h3>
-                <p>Full Stack Web Developer</p>
+    <section class="ml-40" id="about-me">
+        <h2 class="text-3xl pl-10 mt-26 mb-10" >My education</h2>
+        <div class="p-10 grid gap-4 grid-cols-[50px_minmax(900px,_1fr)] ">
+            <span class="rounded-full bg-purple-950 border-3 border-purple-700 h-12 "></span><img class="size-10" src="https://img.icons8.com/sf-regular-filled/1200/image.jpg" alt="Logo UTN">
+            <div></div>
+            <div class="border-l-4 p-6 my-6 border-purple-500">
+                <h3 class="text-2xl pb-2">Universidad Tecnologica Nacional (UTN)</h3>
+                <p>3er Año de la carrera Ingenieria en Sistemas de Informacion</p>
                 <p>2023 - Present</p>
             </div>
-            <img src="https://img.icons8.com/sf-regular-filled/1200/image.jpg" alt="Logo de Bernardez">
-            <div>
-                <h3>Open Bootcamp</h3>
-                <p>Web Developer</p>
+            <span class="rounded-full bg-purple-950 border-3 border-purple-700 h-12"></span> <img class="size-10" src="https://img.icons8.com/sf-regular-filled/1200/image.jpg" alt="Logo de Bernardez">
+            <div></div>
+            <div class="border-l-4 p-6 my-6 border-purple-500">
+                <h3 class="text-2xl pb-2">Instituto Francisco Luiz Bernardez</h3>
+                <p>Bachiller en Administracion de Empresas</p>
                 <p>2010 - 2023</p>
             </div>
     </section>
     
     <!--Projects-->
-    <section>
-        <h2>Some Features Projects</h2>
-        <div>
-            <figure>
-                <img src="https://img.icons8.com/sf-regular-filled/1200/image.jpg" alt="Ruitz">
-                <figcaption></figcaption>
+    <section class="ml-40" id="projects">
+        <h2 class="text-3xl pl-10 mt-26">Some Features Projects</h2>
+        <div class="flex flex-col gap-8 p-10">
+            <figure class="flex gap-8 p-10 items-center">
+                <a class="block size-auto" href=""><img src="https://img.icons8.com/sf-regular-filled/1200/image.jpg" alt="Ruitz"></a>
+                <figcaption class="p-8 border-l-4 border-purple-500">
+                    <h3 class="text-2xl pb-4">Ruitz E-commerce</h3>
+                    <p class="text-justify p-3">Developed a full-stack e-commerce website using React for the frontend and Node.js with Express for the backend. Implemented user authentication, product management, and a shopping cart feature.</p>
+                </figcaption>
             </figure>
-            <figure>
-                <img src="https://img.icons8.com/sf-regular-filled/1200/image.jpg" alt="Menu">
-                <figcaption></figcaption>
+            <figure class="flex gap-8 p-10 items-center">
+                <a class="block size-auto" href=""><img src="https://img.icons8.com/sf-regular-filled/1200/image.jpg" alt="Menu"></a>
+                <figcaption class="p-8 border-l-4 border-purple-500">
+                    <h3 class="text-2xl pb-4">Restaurant Menu App</h3>
+                    <p class="text-justify p-3">Created a responsive web application for a restaurant that allows users to browse the menu, place orders, and make reservations. Built with HTML, CSS, and JavaScript.</p>
+                </figcaption>
             </figure>
         </div>
     </section>
     
     <!--Contact-->
-    <section>
+    <section class="m-auto flex gap-8 justify-center items-center p-10" id="contact">
         <div>
-            <h2>Have a project idea? Let’s build it together. </h2>
-            <p>I’m always open to new ideas and collaborations. If you have a project in mind or need help bringing one to life, feel free to reach out.</p>
-            <button>Send me a message</button>
+            <h2 class="text-3xl p-10 ">Have a project idea? Let’s build it together. </h2>
+            <p class="text-justify pl-10">I’m always open to new ideas and collaborations. If you have a project in mind or need help bringing one to life, feel free to reach out.</p>
+            <div class="ml-10 my-5 bg-gradient-to-l from-purple-900 to-orange-100 rounded-3xl p-0.5 inline-block"><button class="bg-black px-6 py-2 rounded-3xl">Send me a message</button></div>
         </div>
-        <img src="https://img.icons8.com/sf-regular-filled/1200/image.jpg" alt="Imagen decorativa">
+        <img class="size-96" src="https://img.icons8.com/sf-regular-filled/1200/image.jpg" alt="Imagen decorativa">
     </section>
     
-    <footer>
-        <img src="https://img.icons8.com/sf-regular-filled/1200/image.jpg" alt="logo">
-        <nav>
+    <footer class="relative bottom-0 bg-black flex justify-around items-center p-4">
+        <img class="size-10" src="https://img.icons8.com/sf-regular-filled/1200/image.jpg" alt="logo">
+        <nav  class=" nav bg-black flex gap-8 rounded-3xl p-2 px-8 ">
             <a href="">
-                <svg>
+                <svg class="text-white fill-current size-8 drop-shadow-[0_12px_20px_rgba(255,255,255,0.5)] transition-all hover:scale-95">
                     <use href="assets/icons/sprite.svg#x"></use>
                 </svg>
             </a>
             <a href="">
-                <svg>
+                <svg class="text-white fill-current size-8 drop-shadow-[0_12px_20px_rgba(255,255,255,0.5)] transition-all hover:text-[#6E40C9] hover:drop-shadow-[0_0_20px_rgba(110,64,201,0.9)] hover:scale-95">
                     <use href="assets/icons/sprite.svg#github"></use>
                 </svg></a>
-            <a href="">LinkedIn</a>
             <a href="">
-                <svg>
+                <svg class="text-white fill-current size-8 drop-shadow-[0_12px_20px_rgba(255,255,255,0.5)] transition-all hover:text-[#1DA1F2] hover:drop-shadow-[0_0_30px_rgba(29,161,242,1)] hover:scale-95" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="current" d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z" />
+                </svg>
+            </a>
+            <a href="">
+                <svg class="text-white fill-current size-8 drop-shadow-[0_12px_20px_rgba(255,255,255,0.5)] transition-all hover:text-[#DD2A7B] hover:drop-shadow-[0_0_20px_rgba(221,42,123,0.9)] hover:scale-95">
                     <use href="assets/icons/sprite.svg#instagram"></use>
                 </svg>
             </a>
         </nav>
-        <div>
+        <div class="flex gap-4">
             <p>Hire me</p>
-            <img src="" alt="Foto mia">
+            <img class="size-10" src="https://img.icons8.com/sf-regular-filled/1200/image.jpg" alt="Foto mia">
         </div>
     </footer>
 </body>
-</html>http://127.0.0.1:5500/index.html
+</html>
